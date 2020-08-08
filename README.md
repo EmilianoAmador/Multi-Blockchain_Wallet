@@ -18,7 +18,7 @@ To initiate transactions, the user needs to make an account out of the private k
 ![](Images/functions.png)
 
 **Checking Balance:**
-  > **w3.eth.getBalance("<private key>")**
+  > **w3.eth.getBalance("INSERT-PRIVATE-KEY")**
 
 ![](Images/bitcoin_t.png)
 ![](Images/bitproof.png)
