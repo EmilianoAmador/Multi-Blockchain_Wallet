@@ -3,10 +3,10 @@
 ![](Images/DW.jpg)
 
 ### Summary
-This wallet gives users the power to make secure transactions accross the bit and web3 network. Currently, the wallet supports bitcoin and ethereum, but will include other SLIP-0044 registered coin types in later updates. by entering a 12 word mnemoic, users can access their HD wallets and create as many child keys as needed. Users can also create transactions to preview and send to other recipients. Once the transactions are complete, users can access their transaction status, their current balance, and their blocks on the blockchain.
+This wallet gives users the power to make secure transactions accross the bit and web3 network. Currently, the wallet supports bitcoin and ethereum, but will include other ERC20 registered coin types in later updates. By entering a 12 word mnemoic, users can access their HD wallets and create as many child keys as needed to store their funds. Once verified, users can also initiate transactions where they will receive a preview prompt before sending funds to other recipients. Once a transaction is complete, users can access their transaction status, their current balance, and their blocks on the blockchain.
 
 ### The Nuts and Bolts
-To load the wallet child keys, we used subprocess to access HD-wallet and visualize the addresses. These lines of code were placed inside a function called derive_wallets and the outputs stored in variables for later access. by giving the 3 parameters to the function we give the user the ability to enter their mnemonic, chooses their desired coin, and how many wallet addresses they want to derive.  
+To load the wallet child keys, we used subprocess to access HD-wallet and visualize the addresses. These lines of code were placed inside a function called derive_wallets and the outputs stored in variables for later access. By giving the function 3 parameters, we give the user the ability to enter their mnemonic, chooses their desired coin, and how many wallet addresses they want to derive.  
 ![](Images/php_python.png)
 
 Before creating a transaction, we connected to the network using web3 http provider, with our local host address and private key. Then we checked if our nodes were connected to pur PoA local network.
