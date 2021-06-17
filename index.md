@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+# Multi-Blockchain_Wallet: Using HD Wallet Multi-Account Hierarchy 
 
-You can use the [editor on GitHub](https://github.com/EmilianoAmador/Multi-Blockchain_Wallet/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![](Images/DW.jpg)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Summary
+This wallet gives users the power to make secure transactions accross the bit and web3 network. Currently, the wallet supports bitcoin and ethereum, but will include other ERC20 registered coin types in later updates. By entering a 12 word mnemoic, users can access their HD wallets and create as many child keys as needed to store their funds. Once verified, users can also initiate transactions where they will receive a preview prompt before sending funds to other recipients. Once a transaction is complete, users can access their transaction status, their current balance, and their blocks on the blockchain.
 
-### Markdown
+### The Nuts and Bolts
+To load the wallet child keys, I used a subprocess to access HD-wallet and to visualize the addresses. I created a function with three parameters to give users the ability to enter their mnemonic, choose their desired coin, and how many wallets they want to create.  
+![](Images/php_python.png)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Before creating a transaction, I connected to the network using web3 http provider using my own local host address and private key. Then I checked if my nodes were connected to my local network and if the correct consensus algorithm was working properly.
+![](Images/connecting.png)
 
-```markdown
-Syntax highlighted code block
+To initiate transactions, the user needs to make an account out of the private keys provided in the child wallets. To do this they can use the function priv_key_to_account in order to generate one. Once this is done they can use a function called create_tx. This function allows the user to input their created account, coin type , amount of money to send, and the address of the recipient they want to send to. To process the ethereum coins, we used web3 library functions, and to process the bitcoin coins we used the bit.network API functions. To send the transactions simply use the send_tx function which signs the transaction previously created. In other words, this function initiates the petition for the transaction and once validated are added to the blockchain as a transaction block. Congratulations, your transaction has been made. To check, we simply used bit network and web3 to retireve the blocks as well as the transaction confirmations. Lastly, to check the balance we used web3 get balance. 
 
-# Header 1
-## Header 2
-### Header 3
+**The functions created:**
+![](Images/functions.png)
 
-- Bulleted
-- List
+**Checking Balance:**
+  > **w3.eth.getBalance("INSERT-PRIVATE-KEY")**
 
-1. Numbered
-2. List
+![](Images/bitcoin_t.png)
+![](Images/bitproof.png)
 
-**Bold** and _Italic_ and `Code` text
+![](Images/ETH_transact.png)
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/EmilianoAmador/Multi-Blockchain_Wallet/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+**Retrieving the block from the blockchain**
+![](Images/block.png)
