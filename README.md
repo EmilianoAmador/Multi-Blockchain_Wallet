@@ -1,4 +1,4 @@
-# Multi-Blockchain_Wallet: Using BIP-44 Multi-Account Hierarchy 
+# Multi-Blockchain Wallet: Using BIP-44 Multi-Account Hierarchy 
 
 ![](Images/DW.jpg)
 
