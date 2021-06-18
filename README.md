@@ -1,5 +1,4 @@
 # Multi-Blockchain Wallet
-[](https://github.com/EmilianoAmador/Multi-Blockchain_Wallet/blob/master/Wallet.ipynb "Click
 
 ![](Images/DW.jpg)
 
