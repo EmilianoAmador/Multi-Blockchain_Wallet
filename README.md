@@ -1,12 +1,15 @@
 # Multi-Blockchain Wallet
+[](https://github.com/EmilianoAmador/Multi-Blockchain_Wallet/blob/master/Wallet.ipynb "Click
 
 ![](Images/DW.jpg)
 
 ### Summary
 This wallet gives users the power to make secure transactions accross the bit and web3 network. Currently, the wallet supports bitcoin and ethereum, but will include other ERC20 registered coin types in later updates. By entering a 12 word mnemoic, users can access their HD wallets and create as many child keys as needed to store their funds. Once verified, users can also initiate transactions where they will receive a preview prompt before sending funds to other recipients. Once a transaction is complete, users can access their transaction status, their current balance, and their blocks on the blockchain.
 
+Please click the link to view python code: [Python Scripts](https://github.com/EmilianoAmador/Multi-Blockchain_Wallet/blob/master/Wallet.ipynb "Click Me")
+
 ### Testing Code at No Cost
-Testing cryptocurrency transactions on a live network can be expensive. Therefore, to test the code without exhausting any funds, I created a custom blockchain network. Please see article where I list all the steps involved in this process: https://emilianoamador.github.io/Blockchain_Custom_Network/
+Testing cryptocurrency transactions on a live network can be expensive. Therefore, to test the code without exhausting any funds, I created a custom blockchain network. Please see article where I list all the steps involved in this process: [Blockchain Custom Network](https://emilianoamador.github.io/Blockchain_Custom_Network/ "Click Me")
 
 Additionally, I used Gnache's test network to simulate Ethereum's blockchain infrastructure and GUI.
 
