@@ -8,6 +8,8 @@ This wallet gives users the power to make secure transactions accross the bit an
 ### Testing Code at No Cost
 Testing cryptocurrency transactions on a live network can be expensive. Therefore, to test the code without exhausting any funds, I created a custom blockchain network. Please see article where I list all the steps involved in this process: https://emilianoamador.github.io/Blockchain_Custom_Network/
 
+Additionally, I used Gnache's test network to simulate Ethereum's blockchain infrastructure and GUI.
+
 
 ### The Nuts and Bolts
 To load the wallet child keys, I used a subprocess to access HD-wallet and to visualize the addresses. I created a function with three parameters to give users the ability to enter their mnemonic, choose their desired coin, and how many wallets they want to create.  
