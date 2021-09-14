@@ -3,7 +3,7 @@
 ![](Images/DW.jpg)
 
 ### Summary
-This wallet gives users the power to make secure transactions accros the bit and web3 network. Currently, the wallet supports bitcoin and ethereum, but will include other ERC20 registered coin types in later updates. By entering a 12 word mnemoic, users can access their HD wallets and create as many child keys as needed to store their funds. Once verified, users can also initiate transactions where they will receive a preview prompt before sending funds to other recipients. Once a transaction is complete, users can access their transaction status, their current balance, and their blocks on the blockchain.
+This wallet gives users the power to make secure transactions across the bit and web3 network. Currently, the wallet supports bitcoin and ethereum, but will include other ERC20 registered coin types in later updates. By entering a 12 word mnemoic, users can access their HD wallets and create as many child keys as needed to store their funds. Once verified, users can also initiate transactions where they will receive a preview prompt before sending funds to other recipients. Once a transaction is complete, users can access their transaction status, their current balance, and their blocks on the blockchain.
 
 **Please click the link to view python code:** [Python Scripts](https://github.com/EmilianoAmador/Multi-Blockchain_Wallet/blob/master/Wallet.ipynb "Click Me")
 
